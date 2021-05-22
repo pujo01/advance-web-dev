@@ -1,0 +1,63 @@
+{
+    "case1": {
+        "testcase_name": "field nama kosong",
+        "data": {
+            "name": "",
+            "email": "dian.14117004@student.itera.ac.id",
+            "password": "Dianasmara20",
+            "re-password": "Dianasmara20"
+        },
+        "expected": {
+            "pesan": "Nama Tidak boleh kosong"
+        }
+    },
+
+    "case2": {
+        "testcase_name": "field email tidak sesuai aturan",
+        "data": {
+            "name": "Dian Asmara",
+            "email": "didi",
+            "password": "Dianasmara20",
+            "re-password": "Dianasmara20"
+        },
+        "expected": {
+            "pesan": "Email yang kamu masukkan tidak valid"
+        }
+    },
+    "case3" : {
+        "testcase_name": "field password tidak sesuai aturan",
+        "data": {
+            "name": "Dian Asmara",
+            "email": "dian.14117004@student.itera.ac.id",
+            "password": "dianasmara20",
+            "re-password": "Dianasmara20"
+        },
+        "expected": {
+            "pesan": "Harap sertakan setidaknya satu huruf | kapital Harap sertakan setidaknya satu angka | Kata sandi setidaknya harus terdiri dari 6 karakter"
+        }
+    },
+    "case4" : {
+        "testcase_name": "isi field re-password tidak sama dengan field password",
+        "data": {
+            "name": "Dian Asmara",
+            "email": "dian.14117004@student.itera.ac.id",
+            "password": "Dianasmara20",
+            "re-password": "Dian20"
+        },
+        "expected": {
+            "pesan": "Kata sandi yang diberikan tidak cocok"
+        }
+    },
+    "case5" : {
+        "testcase_name": "semua field terisi dengan benar",
+        "data": {
+            "name": "Dian Asmara",
+            "email": "dian.14117004@student.itera.ac.id",
+            "password": "Dianasmara20",
+            "re-password": "Dianasmara20"
+        },
+        "expected": {
+            "pesan": "Pendaftaran berhasil!"
+        }
+    }
+}

@@ -48,7 +48,7 @@ export default class RegistrationForm extends React.Component {
           label="Konfirmasi password"
           required
           skip />
-        <Button primary>Registrasi</Button>
+        <Button primary>Register</Button>
       </Form>
     );
   }

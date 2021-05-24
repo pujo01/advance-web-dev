@@ -9,7 +9,7 @@ import { Input, Button } from 'react-advanced-form-addons'
 
 export default class RegistrationForm extends React.Component {
   registerUser = ({ serialized, fields, form }) => {
-    return fetch('https://advance-web-dev-3.vercel.app/', {
+    return fetch('https://backend.dev', {
       body: JSON.stringify(serialized)
     })
   }
